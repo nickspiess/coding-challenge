@@ -1,0 +1,131 @@
+/* ─── Orphan Indicators ────────────────────────────────────────── */
+
+.orphan-row {
+	background: #fffbeb;
+}
+
+.orphan-row:hover {
+	background: #fef3c7;
+}
+
+.badge-orphan {
+	background: #fed7aa;
+	color: #9a3412;
+}
+
+.orphan-toggle {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-size: 0.8rem;
+	font-weight: 500;
+	color: #64748b;
+	cursor: pointer;
+}
+
+.orphan-toggle input[type="checkbox"] {
+	accent-color: #f97316;
+}
+
+/* ─── Create Product Modal ─────────────────────────────────────── */
+
+.modal-overlay {
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+}
+
+.modal {
+	background: white;
+	border-radius: 8px;
+	padding: 1.5rem;
+	width: 100%;
+	max-width: 500px;
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.modal h2 {
+	font-size: 1.1rem;
+	margin-bottom: 1rem;
+}
+
+.modal-fields {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	margin-bottom: 1.25rem;
+}
+
+.modal-fields label {
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
+	font-size: 0.8rem;
+	font-weight: 500;
+	color: #64748b;
+}
+
+.modal-fields input {
+	font-size: 0.85rem;
+	padding: 0.45rem 0.75rem;
+}
+
+.modal-fields input:disabled {
+	background: #f1f5f9;
+	color: #94a3b8;
+}
+
+.modal-actions {
+	display: flex;
+	gap: 0.5rem;
+	justify-content: flex-end;
+}
+
+.modal-error {
+	color: #991b1b;
+	font-size: 0.8rem;
+	margin-bottom: 0.75rem;
+	padding: 0.5rem;
+	background: #fef2f2;
+	border-radius: 4px;
+}
+
+.btn-create {
+	background: #f97316;
+	color: white;
+}
+
+.btn-create:hover {
+	background: #ea580c;
+}
+
+.btn-create:disabled {
+	background: #94a3b8;
+	cursor: not-allowed;
+}
+
+/* ─── Modal Validation ────────────────────────────────────────── */
+
+.required {
+	color: #dc2626;
+	font-weight: 600;
+}
+
+.field-error {
+	border-color: #dc2626 !important;
+	outline-color: #dc2626;
+}
+
+.field-hint {
+	font-size: 0.7rem;
+	color: #94a3b8;
+	font-weight: 400;
+}
+
+.field-hint.error {
+	color: #dc2626;
+}
